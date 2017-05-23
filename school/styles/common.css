@@ -1,0 +1,42 @@
+.margin-top-5{
+    margin-top: 5px;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.text-center{
+    text-align: center;
+}
+.width100{
+    width:100%;
+}
+.pad-0{
+    padding: 0px ! important;
+}
+.mar-0{
+    margin: 0px ! important;
+}
+.pad-top-10{
+    padding-top: 10px;
+}
+textarea{
+    color: black !important;
+}
+.header{
+    background-color: #4ca7ff;
+    padding: 0px ! important;
+    margin: 0px ! important;
+/*    padding: 15px 10px;*/
+}
+.resp_img{
+    width: 80px ! important;
+    height: 60px! important;
+}
+.text_head{
+    text-align: start;
+    font-size: 30px;
+}
+/*
+.back-image{
+    background-image: url("images/logo.png");
+}*/

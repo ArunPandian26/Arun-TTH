@@ -1,0 +1,840 @@
+
+
+/*-- Reset Code --*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+.txt-lt {
+    text-align: left;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.float-rt {
+    float: right;
+}
+
+.float-lt {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.vertical-base {
+    vertical-align: baseline;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+.underline {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    margin: 0 0 20px 0;
+}
+
+nav.vertical ul li {
+    display: block;
+}
+
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-- Reset Code --*/
+
+
+
+/*-- Index-Page-Styling --*/
+
+body {
+    /*background: url("../images/background.jpg");*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+    body a {
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        text-decoration: none;
+    }
+
+input[type="button"], input[type="submit"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #FFF;
+    letter-spacing: 2px;
+    margin: 40px auto;
+}
+
+.customeconatiner-registerform {
+    width: 30%;
+    margin: 0 auto;
+    /*background:rgba(34, 40, 64, 0.65);*/
+    background: rgba(84, 84, 84, 0.61);
+    padding: 1em 2em;
+}
+
+.customecontact h2 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    background-color: #4ca7ff;
+}
+
+a.hiddenanchor {
+    display: none;
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 7px;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    color: #000;
+    background-color: #969696;
+    margin-top: 2px;
+    margin-bottom: 18px;
+    border: 1px solid #fff;
+}
+
+textarea#message {
+    height: 150px;
+    padding: 7px;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.76);
+    margin-top: 12px;
+    margin-bottom: 18px;
+    width: 97%;
+}
+/*--registerform--*/
+#register, #login {
+    width: 100%;
+}
+
+#toregister:target ~ #wrapper #register, #tologin:target ~ #wrapper #login {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -ms-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -o-animation-delay: .1s;
+    -ms-animation-delay: .1s;
+    animation-delay: .1s;
+}
+
+#toregister:target ~ #wrapper #login, #tologin:target ~ #wrapper #register {
+    -webkit-animation-name: fadeOutLeftBig;
+    -moz-animation-name: fadeOutLeftBig;
+    -ms-animation-name: fadeOutLeftBig;
+    -o-animation-name: fadeOutLeftBig;
+    animation-name: fadeOutLeftBig;
+}
+
+.animate {
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-fill-mode: both;
+    -o-animation-duration: 1s;
+    -o-animation-timing-function: ease;
+    -o-animation-fill-mode: both;
+    -ms-animation-duration: 1s;
+    -ms-animation-timing-function: ease;
+    -ms-animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+
+h3 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #EEE;
+    padding: 10px 0;
+    border-bottom: 1px solid #CCC;
+}
+
+.form {
+    padding: 0px 0px 0px;
+    text-align: left;
+}
+
+h4 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #EEE;
+}
+
+form {
+    margin-top: 0px;
+}
+
+select {
+    color: #FFEB3B;
+}
+
+    select option {
+        color: #252525;
+        background-color: #fff;
+    }
+
+input::-webkit-input-placeholder {
+    color: #FFF !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+    color: #FFF !important;
+}
+
+input::-moz-placeholder { /* Firefox 19+ */
+    color: #FFF !important;
+}
+
+input:-ms-input-placeholder {
+    color: #FFF !important;
+}
+
+select, .tickets input[type="number"] {
+    width: 100%;
+    padding: 7px;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    color: #fff;
+    background-color: #969696;
+    margin-top: 2px;
+    margin-bottom: 18px;
+    border: 1px solid #fff;
+}
+
+    select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+        width: 100%;
+        font-family: 'Varela Round', sans-serif;
+        padding: 8px 15px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+        outline: none;
+        border: none;
+        color: #000;
+        background-color: #969696;
+        border: 1px solid #fff;
+    }
+
+.book-pag {
+    padding: 5px 0px 0;
+    text-align: left;
+}
+
+    .book-pag h4 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #EEE;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+#register .book-pag-frm1, #register .book-pag-frm2 {
+    width: 100%;
+    float: left;
+}
+
+.date {
+    background: url(../images/date-icon.png) no-repeat 95.5% 45% #fff;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.book-pag-frm1 {
+    padding-top: 0px;
+}
+
+label {
+    font-size: 15px;
+    color: #EEE;
+    font-family: 'Varela Round', sans-serif;
+    float: left;
+    width: 100%;
+}
+
+.tickets {
+    padding: 10px 0px;
+    text-align: left;
+}
+
+
+    .tickets input[type="number"] {
+        width: 97%;
+    }
+
+.wthreesubmitaits {
+    padding: 0px 0px 30px;
+    text-align: left;
+}
+
+    .wthreesubmitaits input[type="submit"] {
+        padding: 7px 30px;
+        font-family: 'Varela Round', sans-serif;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+        .wthreesubmitaits input[type="submit"]:hover {
+            background-color: #03bbb1;
+        }
+
+p.change_link {
+    font-family: 'Varela Round', sans-serif;
+    color: #EEE;
+    width: 100%;
+    font-size: 15px;
+    padding: 0 0 40px;
+}
+
+#wrapper p.change_link a {
+    color: #FFEB3B;
+    font-size: 18px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    border-bottom: 3px solid #FFEB3B;
+}
+
+    #wrapper p.change_link a:hover {
+        color: #FFC107;
+        border-bottom: 3px solid #FFC107;
+    }
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+::-moz-placeholder {
+    color: #000;
+}
+
+::-moz-placeholder {
+    color: #000;
+}
+
+::-ms-input-placeholder {
+    color: #000;
+}
+
+
+.registerfooter p a {
+    color: #4ca7ff;
+}
+
+.registerfooter p {
+    line-height: 0px;
+    margin: 25px 0;
+    color: #4ca7ff;
+}
+
+    .registerfooter p a:hover {
+        color: #969696;
+        text-decoration: none;
+    }
+
+/*-- Index-Page-Styling --*/
+
+
+
+
+
+/*--- Responsive Code ---*/
+@media screen and (max-width: 1440px) {
+    .customeconatiner-registerform {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .customeconatiner-registerform {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .customeconatiner-registerform {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .customeconatiner-registerform {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .customeconatiner-registerform {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    input[type="text"], textarea#message {
+        width: 96.5%;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .customeconatiner-registerform {
+        width: 48%;
+    }
+
+    input[type="text"], textarea#message {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .customeconatiner-registerform {
+        width: 50%;
+    }
+
+    input[type="text"], textarea#message {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    .customeconatiner-registerform {
+        width: 53%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .customeconatiner-registerform {
+        width: 55%;
+    }
+
+    input[type="text"], textarea#message {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .customeconatiner-registerform {
+        width: 90%;
+    }
+
+    input[type="text"], textarea#message {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .customeconatiner-registerform {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .customeconatiner-registerform {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .customeconatiner-registerform {
+        width: 70%;
+    }
+
+    input[type="text"], textarea#message {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    .customeconatiner-registerform {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .customeconatiner-registerform {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .customeconatiner-registerform {
+        width: 83%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        margin: 40px auto 28px;
+    }
+
+    .customeconatiner-registerform {
+        width: 90%;
+    }
+
+    input[type="text"], textarea#message {
+        width: 95.5%;
+    }
+
+    select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+        width: 90.8%;
+    }
+
+    .tickets input[type="number"] {
+        width: 95.8%;
+    }
+
+    textarea#message {
+        height: 100px;
+        width: 95.8%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .customecontact h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], textarea#message {
+        width: 100%;
+    }
+
+    select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+        width: 100%;
+    }
+
+    .tickets input[type="number"] {
+        width: 95%;
+    }
+
+    textarea#message {
+        width: 95%;
+    }
+
+    .registerfooter p {
+        margin: 28px 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    h1 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 18px;
+        margin: 30px auto 18px;
+        line-height: 28px;
+    }
+
+    .customeconatiner-registerform {
+        padding: 1em 1em;
+    }
+
+    .customeconatiner-registerform {
+        width: 90%;
+    }
+
+    .wthreesubmitaits {
+        padding: 0px 0px 14px;
+    }
+
+    input[type="text"], textarea#message {
+        width: 94%;
+    }
+
+    select.dropdown, input#datepicker, input#datepicker1, input#datepicker2 {
+        width: 87.5%;
+    }
+
+    .tickets input[type="number"] {
+        width: 94%;
+    }
+
+    textarea#message {
+        width: 94.5%;
+    }
+
+    .registerfooter p {
+        margin: 25px 0px;
+        font-size: 13px;
+    }
+
+    .customecontact h2 {
+        margin-bottom: 15px;
+    }
+   
+}
+
+
+
+
+
+/*--- Responsive Code ---*/
+
+
+
+.dropdown {
+    /*position: relative;*/
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown-text {
+    cursor: pointer;
+    position: absolute;
+    text-indent: 10px;
+    line-height: 32px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+    width: 100%;
+}
+
+    .dropdown-text:after {
+        position: absolute;
+        right: 6px;
+        top: 15px;
+        content: '';
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 5px 4px 0 4px;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.dropdown-text,
+.dropdown-content a {
+    color: #333;
+    text-shadow: 0 1px #fff;
+}
+
+.dropdown-toggle {
+    font-size: 0;
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 1px;
+    background: transparent;
+    text-indent: -10px;
+    height: 34px;
+    width: 100%;
+}
+
+    .dropdown-toggle:focus {
+        outline: 0;
+    }
+
+.dropdown-content {
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+    list-style-type: none;
+    position: absolute;
+    top: 32px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+    text-indent: 10px;
+    line-height: 32px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+    .dropdown-content a {
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background: #e8e8e8;
+        }
+
+
+.dropdown-toggle:hover ~ .dropdown-text,
+.dropdown-toggle:focus ~ .dropdown-text {
+    background-color: #e8e8e8;
+}
+
+.dropdown-toggle:focus ~ .dropdown-text {
+    box-shadow: 0 1px 3px rgba(0,0,0, .2) inset, 0 1px 0 rgba(255,255,255, 0.8);
+    z-index: 2;
+}
+
+    .dropdown-toggle:focus ~ .dropdown-text:after {
+        border-width: 0 4px 5px 4px;
+        border-color: transparent transparent #555 transparent;
+    }
+
+.dropdown-content:hover,
+.dropdown-toggle:focus ~ .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    top: 42px;
+}
+
+
+#genderbtn .notActive {
+    color: #fff;
+    background-color: transparent;
+}
+
+#genderbtn .Active {
+    color: #3276b1;
+    background-color: #fff;
+}
+
+.btn-gender {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #ffffff;
+}
+
+    .btn-gender.active, .btn-gender:active, .open > .dropdown-toggle.btn-gender {
+        background-image: none;
+    }
+
+    .btn-gender:hover {
+        color: #fff;
+        background-color: #286090;
+        border-color: #204d74;
+    }
+
+	
+	.form-control-feedback{
+		top: -7px;
+	}
+	
+	.form-control-text{
+	    top: -7px;
+	}

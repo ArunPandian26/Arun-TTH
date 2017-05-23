@@ -1,0 +1,98 @@
+<div ng-controller="studentdetailsCtrl" class="container-fluid" ng-init="init()" style="margin-top:4%">
+  <div class="row" style="margin-bottom:3%">
+    <div class="topnav">
+      <!-- style="position:fixed;width:100%;z-index:1"-->
+      <i class=""   style=""  >Hi {{staffNm}}..
+      </i>  
+      <i   style="float:right;cursor:pointer"  ng-click="logout()">
+        <img style="width:25%" src="./images/1495033847_logout.png"/> Logout
+      </i>
+    </div>
+  </div>
+  <!--<div class="row" style="margin-bottom:1%"><span style="margin-right:28%"><b>Staff Name:</b>  {{staffNm}}</span>  <span class="col-sm-offset-3" ><b>Staff Id:</b>  {{staffId}}</span></div>-->
+  <div class="row container">
+    <div class="col-xs-3"> 
+      <img style="width:43px ! important;cursor:pointer;float:right;" ng-click="pageredirect()" src="./images/leftarrow.png"/>
+    </div>
+    <div class="col-xs-9" style="background-color:#969696">           
+      <table class="table table-bordered" style="margin-top:3%">
+        <thead>
+          <tr>
+            <th>
+              <b>ROLL NO
+              </b>
+            </th>
+            <th>
+              <b>NAME
+              </b>
+            </th>
+            <th>
+              <b>STUDENT ID
+              </b>
+            </th>
+            <th>
+              <b>SCORE
+              </b>
+            </th>
+            <th>
+              <b>COMMENTS
+              </b>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="val in values">
+            <td>{{val.rollno}}
+            </td>
+            <td>{{val.studentname}}
+            </td>
+            <td>{{val.stdId}}
+            </td>
+            <td>{{val.score}}
+            </td>
+            <td>{{val.comments}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <!--<div class="col-xs-2 col-sm-offset-5" style="padding:10px;background-color:#45b3bf;color:white;text-align:center;cursor:pointer;margin-top:-13px;margin-bottom:30px" ng-click="pageredirect()">
+          <b style="font-size:20px">Go Back
+          </b>
+        </div>-->
+          <input style="background-color:#45b3bf;color:white;margin-bottom:25px;width:10%;padding:5px 10px;border:none;" type="button" value="Go Back" ng-click="pageredirect()" />
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  tr,th{
+    text-align: center;
+  }
+  table{
+    /*box-shadow: 10px 10px 5px #888888;*/
+    box-shadow: 0 0 20px #888888;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 60px;
+  }
+  .topnav a,.topnav i {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 19px 66px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #0ac986;
+    color: white;
+  }
+</style>

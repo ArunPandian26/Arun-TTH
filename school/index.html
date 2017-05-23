@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta charset="UTF-8">-->
+    <title>School</title>
+    <meta charset="utf-8">
+   <!-- <base href="/school/">-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel=stylesheet href="styles/jquery-ui.css">
+     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="lib/jquery/dist/jquery.min.js"></script>-->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="js/push_notification.js"></script>
+    <script src="js/common/app.js"></script>
+    <script src="js/project/home.js"></script>
+    <script src="js/project/login.js"></script>
+     <script src="js/project/studentdetail.js"></script>
+    <script src="js/project/header.js"></script>
+    </head>
+<body class="container-fluid" style="margin-top:-61px;padding:0px">
+<div ng-app="myApp">
+    <!--<div ng-include="'./views/header.html'"></div>-->
+  <div ng-view=""></div>
+</div>
+
+</body>
+</html>

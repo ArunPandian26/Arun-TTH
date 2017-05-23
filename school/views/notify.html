@@ -1,0 +1,78 @@
+<div class="container" style="margin-top:7%" onload="titleNotify()">
+<b>Push Notification</b>
+    
+    <!--<button type="button" class="btn btn-primary" onclick="titleNotify()">Custom Title</button>-->
+</div>
+<script>
+    
+    var data1="";   
+    //alert('1st');
+/*function simpleNotify(){
+      $.notify("simple notify");
+    }
+    function clickalertNotify(){
+      $.notify("click alert notify").click(function(){
+        alert("clicked!");
+      });
+    }
+    function clickredirectNotify(){
+      $.notify("click redirect notify").click(function(){
+        location.href = "https://github.com/asmsuechan/jquery_push_notification";
+      });
+    }
+    function picNotify(){
+      $.notify("asdf", {
+        icon: "https://avatars3.githubusercontent.com/u/11307908?v=3&s=460"
+      });
+    }*/
+    var count=1;
+    var myVar = setInterval(titleNotify ,15000);
+    function titleNotify(){
+       var keepgoing=true;
+        $.ajax({
+        type: "POST",
+        url: "php/notify.php?notify="+count+"",
+        data: '',
+        dataType:'json',    
+        cache: false,
+        success: function(data){
+             data1=data;
+             //console.log(test);
+             //console.log(Object.values(data1));             
+             var studentname=data1.studentname;
+            if(data1.Length >count){                 
+                return count++;
+            }
+            else{                
+                keepgoing=false;
+                return count=1;  
+            }
+                      
+              }
+            });
+        //console.log(data1);
+        if(keepgoing){
+      $.notify(data1.rollno, {
+        icon: "https://avatars3.githubusercontent.com/u/11307908?v=3&s=460",
+        title: data1.studentname,
+        
+      });
+        }
+        
+    }
+</script>
+
+<script type="text/javascript">
+//alert('2nd');
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
